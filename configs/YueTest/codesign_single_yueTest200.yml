@@ -1,0 +1,24 @@
+mode: single_cdr
+model:
+  checkpoint: /home/data/t030413/AlphaPanda_v3_Vcnn/AlphaPanda-main/logs/codesign_single_yue201_2024_04_02__13_49_38/checkpoints/100.pt
+
+sampling:
+  seed: 2024
+  sample_structure: true
+  sample_sequence: true
+  cdrs:
+    - H_CDR1
+    - H_CDR2
+    - H_CDR3
+    - L_CDR1
+    - L_CDR2
+    - L_CDR3
+  num_samples: 1
+
+dataset:
+  test:
+    type: sabdab
+    summary_path: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/sabdab_summary_all.tsv
+    chothia_dir: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/all_structures/chothia
+    processed_dir: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/processed
+    split: test

@@ -1,0 +1,55 @@
+model:
+  type: diffab
+  res_feat_dim: 128
+  pair_feat_dim: 64
+  diffusion:
+    num_steps: 100
+    eps_net_opt:
+      num_layers: 6
+  train_structure: true
+  train_sequence: true
+
+train:
+  loss_weights:
+    rot: 1.0
+    pos: 1.0
+    seq: 1.0
+  max_iters: 100
+  val_freq: 25
+  batch_size: 1
+  seed: 2023
+  max_grad_norm: 100.0
+  optimizer:
+    type: adam
+    lr: 1.e-3
+    weight_decay: 0.0
+    beta1: 0.9
+    beta2: 0.999
+  scheduler:
+    type: plateau
+    factor: 0.8
+    patience: 10
+    min_lr: 5.e-6
+
+dataset:
+  train:
+    type: sabdab
+    summary_path: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/sabdab_summary_all.tsv
+    chothia_dir: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/all_structures/chothia
+    processed_dir: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/processedHu
+    split: train
+    transform:
+    - type: mask_single_cdr
+    - type: merge_chains
+    - type: patch_around_anchor
+  val:
+    type: sabdab
+    summary_path: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/sabdab_summary_all.tsv
+    chothia_dir: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/all_structures/chothia
+    processed_dir: /home/data/t030413/AlphaPanda_v3_Vcnn/diffab-main/data/processedHu
+    split: val
+    transform:
+    - type: mask_single_cdr
+      selection: CDR3
+    - type: merge_chains
+    - type: patch_around_anchor
