@@ -93,7 +93,7 @@ Usage Examples
   ```
 #For training, download all_structures.zip file of the SAbDab dataset from https://opig.stats.ox.ac.uk/webapps/newsabdab/sabdab/archive/all/ , and then extract to data/ directory.
 
-#For inference, checkponits examples can be seen in checkpoints/ directory.
+#For inference, checkponits examples can be download from [checkpoints/ directory](https://huggingface.co/datasets/YueHuLab/AlphaPanda_checkpoints).
 
 License
 
