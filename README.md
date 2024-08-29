@@ -94,7 +94,7 @@ Usage Examples
 
 License
 
-AlphaPanda is licensed under the MIT License. For more details, see the LICENSE file.
+AlphaPanda is licensed under the Apache 2.0 License. For more details, see the LICENSE file.
 
 Contributing
 
