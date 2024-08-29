@@ -101,7 +101,7 @@ AlphaPanda is licensed under the Apache 2.0 License. For more details, see the L
 
 Contributing
 
-Contributions are welcome! Please see the CONTRIBUTING.md file for guidelines on how to contribute to this project.
+Contributions are welcome! 
 
 Contact
 
