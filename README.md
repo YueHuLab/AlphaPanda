@@ -92,6 +92,7 @@ Usage Examples
   python design_AlphaPanda.py ./data/testPDB/8en0.pdb --config ./configs/YueTest/codesign_single_yueTest200.yml --device gpu
   ```
 #For training, download all_structures.zip file of the SAbDab dataset from https://opig.stats.ox.ac.uk/webapps/newsabdab/sabdab/archive/all/ , and then extract to data/ directory.
+
 #For inference, checkponits examples can be seen in checkpoints/ directory.
 
 License
