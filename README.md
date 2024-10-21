@@ -111,7 +111,7 @@ For any questions or issues, please contact the project maintainers at huyue@qlu
 
 Our integration and improvements of the code are reflected in the following tree, and we have also provided an interface for future integration of protein language models.
 ##
-
+<pre>
 AlphaPanda-main/
 ├── AlphaPanda
 │   ├── datasets
@@ -130,7 +130,7 @@ AlphaPanda-main/
 │   │   │   ├── so3.py
 │   │   │   ├── structure.py
 │   │   │   └── topology.py
-│   │   ├──# dcnn
+│   │   ├── dcnn ################## add 3DCNN here
 │   │   │   ├── common
 │   │   │   │   ├── atoms.py
 │   │   │   │   ├── logger.py
@@ -241,7 +241,7 @@ AlphaPanda-main/
 ├── residue_constants.py
 ├── results
 └── train_AlphaPanda.py
-
+</pre>
 
 It also provides the flexibility needed for potential future enhancements, such as incorporating advanced protein language models, which can further extend the capabilities of the AlphaPanda framework (ESM model here).
 https://github.com/YueHuLab/AlphaPanda/tree/AlphaPanda_PLM
@@ -363,7 +363,7 @@ AlphaPanda_PLM/
     ├── train.py
     ├── transforms
     │   ├── _base.py
-    │   ├── #esmTrans.py (Protein Language model here)
+    │   ├── esmTrans.py ##### add Protein Language model （ESM model） here)
     │   ├── __init__.py
     │   ├── mask.py
     │   ├── merge.py
