@@ -95,6 +95,9 @@ Usage Examples
 
 #For inference, checkponits examples can be download from [checkpoints/ directory](https://huggingface.co/datasets/YueHuLab/AlphaPanda_checkpoints).
 
+
+#Please refer to the branch with the protein language model version: https://github.com/YueHuLab/AlphaPanda/tree/AlphaPanda_PLM
+
 License
 
 AlphaPanda is licensed under the Apache 2.0 License. For more details, see the LICENSE file.
