@@ -1,4 +1,4 @@
-
+<pre>
 AlphaPanda README
 
 Overview
@@ -370,5 +370,5 @@ AlphaPanda_PLM/
     │   └── select_atom.py
     └── utils_trx.py
 
-We believe that making the code publicly available will contribute to advancing the entire research field."
-
+We believe that making the code publicly available will contribute to advancing the entire research field.
+</pre>
