@@ -1,4 +1,4 @@
-<pre>
+
 AlphaPanda README
 
 Overview
@@ -246,6 +246,7 @@ AlphaPanda-main/
 It also provides the flexibility needed for potential future enhancements, such as incorporating advanced protein language models, which can further extend the capabilities of the AlphaPanda framework (ESM model here).
 https://github.com/YueHuLab/AlphaPanda/tree/AlphaPanda_PLM
 ##
+<pre>
 AlphaPanda_PLM/
 ├── datasets
 │   ├── _base.py
@@ -369,6 +370,6 @@ AlphaPanda_PLM/
     │   ├── patch.py
     │   └── select_atom.py
     └── utils_trx.py
-
-We believe that making the code publicly available will contribute to advancing the entire research field.
 </pre>
+We believe that making the code publicly available will contribute to advancing the entire research field.
+
