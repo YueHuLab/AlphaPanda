@@ -106,3 +106,268 @@ Contributions are welcome!
 Contact
 
 For any questions or issues, please contact the project maintainers at huyue@qlu.edu.cn
+
+
+
+Our integration and improvements of the code are reflected in the following tree, and we have also provided an interface for future integration of protein language models.
+
+AlphaPanda-main/
+├── AlphaPanda
+│   ├── datasets
+│   │   ├── _base.py
+│   │   ├── custom.py
+│   │   ├── __init__.py
+│   │   └── sabdab.py
+│   ├── models
+│   │   ├── _base.py
+│   │   ├── diffab.py
+│   │   └── __init__.py
+│   ├── modules
+│   │   ├── common
+│   │   │   ├── geometry.py
+│   │   │   ├── layers.py
+│   │   │   ├── so3.py
+│   │   │   ├── structure.py
+│   │   │   └── topology.py
+│   │   ├──# dcnn
+│   │   │   ├── common
+│   │   │   │   ├── atoms.py
+│   │   │   │   ├── logger.py
+│   │   │   │   └── run_manager.py
+│   │   │   ├── LICENSE
+│   │   │   ├── load_and_save_bb_coords.py
+│   │   │   ├── load_and_save_coords.py
+│   │   │   ├── README.md
+│   │   │   ├── requirements.txt
+│   │   │   ├── run.py
+│   │   │   ├── seq_des
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── models_0716002.py
+│   │   │   │   ├── models_bk0716.py
+│   │   │   │   ├── models.py
+│   │   │   │   ├── sampler.py
+│   │   │   │   └── util
+│   │   │   │       ├── acc_util.py
+│   │   │   │       ├── canonicalize0718_back.py
+│   │   │   │       ├── canonicalize_bak0716.py
+│   │   │   │       ├── canonicalize_bk0823003.py
+│   │   │   │       ├── canonicalize_bk0823.py
+│   │   │   │       ├── canonicalize.py
+│   │   │   │       ├── data.py
+│   │   │   │       ├── __init__.py
+│   │   │   │       ├── pyrosetta_util.py
+│   │   │   │       ├── sampler_util.py
+│   │   │   │       ├── voxelize_bk0822.py
+│   │   │   │       └── voxelize.py
+│   │   │   ├── seq_des_info.pdf
+│   │   │   ├── SETUP.md
+│   │   │   ├── train_autoreg_chi_baseline.py
+│   │   │   ├── train_autoreg_chi.py
+│   │   │   └── txt
+│   │   │       ├── test_domains_s95.txt
+│   │   │       ├── test_idx.txt
+│   │   │       └── train_domains_s95.txt
+│   │   ├── diffusion
+│   │   │   ├── dpm_full.py
+│   │   │   ├── getBackAnlge.py
+│   │   │   └── transition.py
+│   │   └── encoders
+│   │       ├── ga.py
+│   │       ├── pair.py
+│   │       └── residue.py
+│   ├── tools
+│   │   ├── dock
+│   │   │   ├── base.py
+│   │   │   └── hdock.py
+│   │   ├── eval
+│   │   │   ├── base.py
+│   │   │   ├── energy.py
+│   │   │   ├── __main__.py
+│   │   │   ├── run.py
+│   │   │   ├── run_single.py
+│   │   │   └── similarity.py
+│   │   ├── relax
+│   │   │   ├── base.py
+│   │   │   ├── __main__.py
+│   │   │   ├── openmm_relaxer.py
+│   │   │   ├── pyrosetta_relaxer.py
+│   │   │   ├── run.py
+│   │   │   └── run_single.py
+│   │   ├── renumber
+│   │   │   ├── __init__.py
+│   │   │   ├── __main__.py
+│   │   │   └── run.py
+│   │   └── runner
+│   │       ├── design_for_pdb.py
+│   │       ├── design_for_testset0801.py
+│   │       └── design_for_testset.py
+│   └── utils
+│       ├── data_bk.py
+│       ├── data.py
+│       ├── inference.py
+│       ├── misc.py
+│       ├── protein
+│       │   ├── constants.py
+│       │   ├── parsers.py
+│       │   └── writers.py
+│       ├── residue_constants.py
+│       ├── train.py
+│       ├── transforms
+│       │   ├── _base.py
+│       │   ├── __init__.py
+│       │   ├── mask.py
+│       │   ├── merge.py
+│       │   ├── patch.py
+│       │   └── select_atom.py
+│       └── utils_trx.py
+├── AlphaPanda_env.yml
+├── configs
+│   ├── YueTest
+│   │   └── codesign_single_yueTest200.yml
+│   └── YueTrain
+│       └── codesign_single_yue201.yml
+├── data
+│   ├── examples
+│   ├── processed
+│   └── sabdab_summary_all.tsv
+├── design_AlphaPanda.py
+├── diffab_license
+│   ├── LICENSE_diffab
+│   └── README_diffab.md
+├── env.yaml
+├── LICENSE_AlphaPanda
+├── logs
+├── residue_constants.py
+├── results
+└── train_AlphaPanda.py
+
+
+It also provides the flexibility needed for potential future enhancements, such as incorporating advanced protein language models, which can further extend the capabilities of the AlphaPanda framework (ESM model here).
+https://github.com/YueHuLab/AlphaPanda/tree/AlphaPanda_PLM
+
+AlphaPanda_PLM/
+├── datasets
+│   ├── _base.py
+│   ├── custom.py
+│   ├── __init__.py
+│   └── sabdab.py
+├── models
+│   ├── _base.py
+│   ├── diffab.py
+│   └── __init__.py
+├── modules
+│   ├── alphafold2_pytorch
+│   │   ├── alphafold2.py
+│   │   ├── BK__init__.py
+│   │   ├── constants.py
+│   │   ├── embeds.py
+│   │   ├── mlm.py
+│   │   ├── reversible.py
+│   │   ├── rotary.py
+│   │   └── utils.py
+│   ├── common
+│   │   ├── geometry.py
+│   │   ├── layers.py
+│   │   ├── so3.py
+│   │   ├── structure.py
+│   │   └── topology.py
+│   ├── dcnn
+│   │   ├── common
+│   │   │   ├── atoms.py
+│   │   │   ├── logger.py
+│   │   │   └── run_manager.py
+│   │   ├── imgs
+│   │   ├── LICENSE
+│   │   ├── load_and_save_bb_coords.py
+│   │   ├── load_and_save_coords.py
+│   │   ├── pdbs
+│   │   ├── README.md
+│   │   ├── requirements.txt
+│   │   ├── run.py
+│   │   ├── seq_des
+│   │   │   ├── __init__.py
+│   │   │   ├── models.py
+│   │   │   ├── sampler.py
+│   │   │   └── util
+│   │   │       ├── acc_util.py
+│   │   │       ├── canonicalize.py
+│   │   │       ├── data.py
+│   │   │       ├── __init__.py
+│   │   │       ├── pyrosetta_util.py
+│   │   │       ├── sampler_util.py
+│   │   │       └── voxelize.py
+│   │   ├── SETUP.md
+│   │   ├── train_autoreg_chi_baseline.py
+│   │   ├── train_autoreg_chi.py
+│   │   └── txt
+│   │       ├── test_domains_s95.txt
+│   │       ├── test_idx.txt
+│   │       └── train_domains_s95.txt
+│   ├── diffusion
+│   │   ├── alphafold2.py
+│   │   ├── dpm_full_evoformer.py
+│   │   ├── dpm_full.py
+│   │   ├── evoformer_huyue.py
+│   │   ├── getBackAnlge.py
+│   │   └── transition.py
+│   ├── encoders
+│   │   ├── ga.py
+│   │   ├── pair.py
+│   │   └── residue.py
+│   └── GeoTrans
+│       ├── augmentation_collate_fun.py
+│       ├── GeometricTransformer_0428.py
+│       ├── GeometricTransformer.py
+│       ├── LICENSE
+│       ├── Main.py
+│       ├── README.md
+│       └── Utils.py
+├── tools
+│   ├── dock
+│   │   ├── base.py
+│   │   └── hdock.py
+│   ├── eval
+│   │   ├── base.py
+│   │   ├── energy.py
+│   │   ├── __main__.py
+│   │   ├── run.py
+│   │   ├── run_single.py
+│   │   └── similarity.py
+│   ├── relax
+│   │   ├── base.py
+│   │   ├── __main__.py
+│   │   ├── openmm_relaxer.py
+│   │   ├── pyrosetta_relaxer.py
+│   │   ├── run.py
+│   │   └── run_single.py
+│   ├── renumber
+│   │   ├── __init__.py
+│   │   ├── __main__.py
+│   │   └── run.py
+│   └── runner
+│       ├── design_for_pdb.py
+│       ├── design_for_pdb_Yue.py
+│       └── design_for_testset.py
+└── utils
+    ├── data_bk.py
+    ├── data.py
+    ├── inference.py
+    ├── misc.py
+    ├── protein
+    │   ├── constants.py
+    │   ├── parsers.py
+    │   └── writers.py
+    ├── residue_constants.py
+    ├── train.py
+    ├── transforms
+    │   ├── _base.py
+    │   ├── #esmTrans.py (Protein Language model here)
+    │   ├── __init__.py
+    │   ├── mask.py
+    │   ├── merge.py
+    │   ├── patch.py
+    │   └── select_atom.py
+    └── utils_trx.py
+
+We believe that making the code publicly available will contribute to advancing the entire research field."
+
