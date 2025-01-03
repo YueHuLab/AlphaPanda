@@ -1,0 +1,5 @@
+####
+Three structures were predicted using AlphaFold3, successfully reaching the desired epitope. The PDB files represent the first model generated for each sequence. All the original structures are included in their corresponding compressed files.
+
+#####
+The amino acid numbering of AQP4 has been renumbered by AlphaFold3 starting from 1. The original PDB file (3GD8) starts from residue 32. Appropriate conversion is needed to map the corresponding amino acids accurately.
