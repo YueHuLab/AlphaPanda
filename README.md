@@ -1,6 +1,9 @@
 
 AlphaPanda README
 
+Citation：
+Yue Hu, Feng Tao, Jiajie Xu, WenJun Lan, Jing Zhang, Wei Lan, "Combining transformer and 3DCNN models to achieve co-design of structures and sequences of antibodies in a diffusional manner, " Journal of Pharmaceutical Analysis, 2025, 101267, ISSN 2095-1779, https://doi.org/10.1016/j.jpha.2025.101267.
+
 Overview
 AlphaPanda (AlphaFold2 inspired Protein-specific antibody design in a diffusional manner)is a software package designed for advanced protein design and modeling tasks. This package includes modules for dataset handling, model training, inference, and evaluation, with a focus on flexibility and high performance in computational biology.Inspired by AlphaFold2 and other protein design methods combined with diffusion generation model, we propose AlphaPanda algorithm. We have written AlphaPanda based diffab and 3DCNN, which were written by python and pytorch. Because diffab program is mainly for antibody design, we added the 3DCNN program as a module to diffab. 
 
